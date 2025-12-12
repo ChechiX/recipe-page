@@ -70,7 +70,8 @@ img {
   margin: 0;
 }
 
-.dish__description {
+.dish__description,
+.nutrition__section p {
   font-size: var(--text-preset-4-desktop);
   margin: 0;
   color: var(--stone-600);
@@ -115,23 +116,90 @@ img {
   font-family: 'Outfit Regular';
 }
 
-.preparation__list span {
+.preparation__list span,
+.instructions__list span {
   font-family: 'Outfit Bold';
 }
 
-.ingredients__section {
+.ingredients__section,
+.instructions__section {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
 
 .ingredients__section h2,
-.instructions__section h2 {
+.instructions__section h2,
+.nutrition__section h2 {
   margin: 0;
   font-size: var(--text-preset-2-desktop);
   font-family: 'YoungSerif Regular';
   color: var(--brown-800);
   line-height: 100%;
+}
+
+.ingredients__section ul,
+.instructions__section ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0;
+  font-size: var(--text-preset-4-desktop);
+  color: var(--stone-600);
+  font-family: 'Outfit Regular';
+  line-height: 150%;
+  list-style-position: inside;
+  padding-left: 0.8rem;
+}
+
+.ingredients__list::marker,
+.instructions__list::marker {
+  color: var(--brown-800);
+}
+
+hr {
+  height: 0.1rem;
+  background-color: var(--stone-150);
+  border: none;
+  margin: 0;
+}
+
+.instructions__list::marker {
+  font-family: 'Outfit Bold';
+  font-size: var(--text-preset-4-desktop);
+  line-height: 150%;
+}
+
+.nutrition__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.nutrition__section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nutrition__list {
+  padding: 0 3.2rem;
+  display: flex;
+  gap: 1.6rem;
+  color: var(--stone-600);
+  font-size: var(--text-preset-4-desktop);
+  font-family: 'Outfit Regular';
+  line-height: 150%;
+}
+
+.nutrition__list .label,
+.nutrition__list .value {
+  flex: 1;
+}
+
+.nutrition__list .value {
+  font-family: 'Outfit Bold';
+  color: var(--brown-800);
 }
 
 .attribution {
